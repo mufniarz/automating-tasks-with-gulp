@@ -45,9 +45,9 @@ gulp.task('compileSass', function() {
     .pipe(maps.init())
     // Compiles Sass files.
     .pipe(sass())
-    // Sets destination path for js map file.  Accepts options.
+    // Sets destination path for css map file.  Accepts options.
     .pipe(maps.write('./'))
-    // Sets destination path for concatinated js file.  
+    // Sets destination path for the css file.  
     .pipe(gulp.dest('css'));
 });
 
